@@ -9,6 +9,8 @@ This is a Node.js script to download files and directories from a vps server usi
 
 ## Installation
 
+> **Warning:** If you are using a Windows OS, please ensure you are on the `windows` branch of this repository. The default branch may not handle file paths correctly for Windows.
+
 1. **Clone the repository:**
 
     ```bash
