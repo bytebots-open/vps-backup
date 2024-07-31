@@ -1,0 +1,16 @@
+# SFTP server configuration
+sftp:
+  host: 10.20.55.84 # The IP address or hostname of the SFTP server
+  port: 22 # The port number of the SFTP server (default is 22 for most servers)
+  username: root # The username to connect to the SFTP server
+  password: hotgirls # The password for the SFTP server user
+
+# Directories
+directories:
+  remote: /usr/share/nginx/bots # The target folder in your VPS or server
+  local: files # The local directory to save downloaded files
+
+# Directories to skip
+skip_dirs:
+  - node_modules
+  - __pycache__
