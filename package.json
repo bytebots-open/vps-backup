@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0",
     "json2csv": "^6.0.0-alpha.2",
     "progress": "^2.0.3",
     "ssh2-sftp-client": "^10.0.3"
