@@ -1,6 +1,6 @@
 # vps-Backup Script
 
-This is a Node.js script to download files and directories from a vps server using sftp, showing download progress and logging any failed downloads to a CSV file.
+This is a Node.js script to download files and directories from a VPS server using SFTP, showing download progress and logging any failed downloads to a CSV file.
 
 ## Prerequisites
 
@@ -22,20 +22,28 @@ This is a Node.js script to download files and directories from a vps server usi
     npm install
     ```
 
-3. **Create a `.env` file:**
+3. **Create a `config.yaml` file:**
 
-    Create a `.env` file in the root of your project directory and add the following variables:
+    Create a `config.yaml` file in the root of your project directory and add the following configuration:
 
-    ```env
-    HOST=10.25.30.14
-    PORT=22
-    USERNAME=root
-    PASSWORD=password
-    REMOTE_DIR=/usr/share/nginx/bots
-    LOCAL_DIR=files
-    SKIP_DIRS=node_modules,__pycache__
+    ```yaml
+    # SFTP server configuration
+    sftp:
+      host: 10.25.30.14        # The IP address or hostname of the SFTP server
+      port: 22                 # The port number of the SFTP server (default is 22 for most servers)
+      username: root           # The username to connect to the SFTP server
+      password: password       # The password for the SFTP server user
+
+    # Directories
+    directories:
+      remote: /usr/share/nginx/bots  # The target folder in your VPS or server
+      local: files                   # The local directory to save downloaded files
+
+    # Directories to skip
+    skip_dirs:
+      - node_modules
+      - __pycache__
     ```
-
 
 ## Usage
 
