@@ -1,4 +1,4 @@
-# vps-Backup Script
+# vps-Backup Script(windows)
 
 This is a Node.js script to download files and directories from a VPS server using SFTP, showing download progress and logging any failed downloads to a CSV file.
 
