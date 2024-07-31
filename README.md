@@ -39,25 +39,6 @@ This project provides a Node.js script to download files and directories from an
     SKIP_DIRS=node_modules,__pycache__
     ```
 
-4. **Configuration:**
-
-    Ensure your `config.js` file is set up to load environment variables correctly:
-
-    ```javascript
-    require('dotenv').config();
-
-    module.exports = {
-      config: {
-        host: process.env.HOST,
-        port: process.env.PORT,
-        username: process.env.USERNAME,
-        password: process.env.PASSWORD,
-      },
-      remoteDir: process.env.REMOTE_DIR,
-      localDir: process.env.LOCAL_DIR,
-      skipDirs: process.env.SKIP_DIRS.split(',')
-    };
-    ```
 
 ## Usage
 
