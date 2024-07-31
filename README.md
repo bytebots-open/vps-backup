@@ -1,6 +1,6 @@
 # vps-Backup Script
 
-This project provides a Node.js script to download files and directories from an SFTP server, showing download progress and logging any failed downloads to a CSV file.
+This is a Node.js script to download files and directories from a vps server using sftp, showing download progress and logging any failed downloads to a CSV file.
 
 ## Prerequisites
 
